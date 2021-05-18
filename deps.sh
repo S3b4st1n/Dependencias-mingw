@@ -22,5 +22,7 @@ cd xerces-c-3.1.1
 make -j4 2>&1                                            
 make -j4 install 2>&1
 
-RUN sudo cp /jansson/jansson.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
-RUN sudo cp /xerces/xerces-c.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
+cp /jansson/jansson.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
+cp /xerces/xerces-c.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
+
+exit 0
