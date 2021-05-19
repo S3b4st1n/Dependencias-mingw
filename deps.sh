@@ -6,7 +6,7 @@ CFGPARMS_JANSON="--prefix=/jannson --host=mingw32"
 
 tar -xvf GTK3.0/openssl-1.0.0e.tar.gz 
 cd openssl-1.0.0e 
-./configure ${CFGPARMS_SSL} 2>&1 
+./Configure ${CFGPARMS_SSL} 2>&1 
 make -j4 2>&1 
 cd ..
 tar -xvf GTK3.0/jansson-2.7.tar.gz      
