@@ -9,9 +9,9 @@ cp -rf openssl-1.0.0e /openssl
 cd /openssl 
 ./Configure ${CFGPARMS_SSL} 2>&1 
 make -j4 2>&1 
-cp libssl.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
-cp libcrypto.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
-cp openssl.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
+cp /openssl/libssl.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
+cp /openssl/libcrypto.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
+cp /openssl/openssl.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
 cd -
 tar -xvf GTK3.0/jansson-2.7.tar.gz      
 cd jansson-2.7       
