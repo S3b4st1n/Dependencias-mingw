@@ -27,7 +27,7 @@ make -j4
 make -j4 install 
 cp xerces-c.pc /usr/src/mxe/usr/i686-w64-mingw32.shared/lib/pkgconfig/
 cd ..
-cp qt.mk //usr/src/mxe/src/qt.mk
+cp GTK3.0/qt.mk //usr/src/mxe/src/qt.mk
 cd //usr/src/mxe/
 make qt
 cd -
