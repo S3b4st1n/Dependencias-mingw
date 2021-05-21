@@ -43,7 +43,7 @@ define $(PKG)_BUILD
         -release \
         -exceptions \
         -static \
-        --shared \
+        -shared \
         -prefix '$(PREFIX)/$(TARGET)/qt' \
         -prefix-install \
         -script \
